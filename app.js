@@ -1,6 +1,9 @@
 console.log("app.js is running 🎉");
-function sayHello(Emil) {
+function sayHello(name) {
   document.querySelector("h3").textContent =
-    "SayHello" + document.querySelector("input").value;
+    " Goddag " +
+    document.querySelector("#name").value +
+    " din alder er " +
+    document.querySelector("#age").value;
 }
 document.querySelector("button").addEventListener("click", sayHello);
